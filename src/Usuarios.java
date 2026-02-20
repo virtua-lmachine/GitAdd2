@@ -32,4 +32,12 @@ public class Usuarios {
             }
         }
     }
+    public void apagarCoche() {
+        if (encendido) {
+            encendido = false;
+            System.out.println("El motor se ha detenido. Silencio total.");
+        } else {
+            System.out.println("Error: El coche ya está apagado. No puedes apagarlo de nuevo.");
+        }
+    }
 }
